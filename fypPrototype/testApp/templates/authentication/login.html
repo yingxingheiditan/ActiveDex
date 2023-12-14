@@ -1,0 +1,24 @@
+{% extends "./base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="login-div col-md-4">
+            <h1>Login</h1>
+            <form id="login_form" method="post", action="/login/">
+                {% csrf_token %}
+                <div class="row-space"></div>
+                {{ login_form.username|as_crispy_field }}
+                <div class="row-space"></div>
+                {{ login_form.password|as_crispy_field }}
+                {% if login_form.ValidationError %}
+                <p>{{ login_form.validation_error }}</p>
+                {% endif %}
+                <div class="row-space"></div>
+                <div class="d-grid gap-2">
+                    <input class="auth-btn mt-3 btn  btn-block" type="submit" value="Login" />
+                </div>
+                </form>
+                <p id="login-form-link">Don't have an account? <a href="./signup/">Signup</a></p>
+        </div>
+    </div>
+{% endblock content %}

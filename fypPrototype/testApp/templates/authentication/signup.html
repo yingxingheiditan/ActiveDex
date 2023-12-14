@@ -1,0 +1,42 @@
+{% extends "./base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="signup-div col-md-4">
+            <h1>Sign Up</h1>
+        </div>
+    </div>
+    {% if signed_up %}
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <strong>Thank you for signing up</strong>
+        </div>
+    </div>
+    {% else %}
+    <div class="row justify-content-center">
+    <div class="col-md-4">
+        <form id="user_form" method="post", action="/signup/"
+        enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row-space"></div>
+        {{ user_form.username|as_crispy_field }}
+        <div class="row-space"></div>
+        {{ profile_form.name|as_crispy_field }}
+        <div class="row-space"></div>
+        {{ user_form.email|as_crispy_field }}
+        <div class="row-space"></div>
+        {{ user_form.password|as_crispy_field }}
+        <div class="row-space"></div>
+        {{ user_form.confirm_password|as_crispy_field }}
+        {% if user_form.ValidationError %}
+        <p>{{ user_form.validation_error }}</p>
+        {% endif %}
+        <div class="d-grid">
+            <input class="auth-btn mt-3 btn btn-block" type="submit" name="submit" value="Sign Up" />
+        </div>
+        </form>
+    </div>
+</div>
+    {% endif %}
+    <p id="signup-form-link">Already have an account? <a href="./login/">Login</a></p>
+{% endblock content %}
