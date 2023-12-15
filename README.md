@@ -6,8 +6,8 @@ pyhton -m venv fypEnv
 
 ## Activate environment
 
-windows: 'cd' to where you can locate your environment and run 'source ./agileEnv/Scripts/activate'
-mac: 'cd' to where you can locate your environment and run 'source ./agileEnv/bin/activate'
+windows: 'cd' to where you can locate your environment and run 'source ./fypEnv/Scripts/activate'
+mac: 'cd' to where you can locate your environment and run 'source ./fypEnv/bin/activate'
 
 ## Set up environment
 
