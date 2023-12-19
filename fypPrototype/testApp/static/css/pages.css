@@ -157,3 +157,131 @@ body {
     text-decoration: none; 
     color: black;
 }
+
+/* styling for board, profile and search pages */
+.month {
+    float: left;
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.month > p {
+    font-family: Inter;
+    font-size: 48px;
+    margin: 0%;
+    padding-left: 2%;
+}
+
+.days {
+    display: flex;
+    width: 100%;
+}
+
+.cal-div {
+    cursor: pointer;
+    flex-grow: 1;
+    padding: .5em;
+    border: 1px solid #808080;
+    border-top: 0px;
+    text-align: center;
+}
+
+.cal-highlight{
+    background-color: #A5F739;
+}
+
+.day {
+    font-size: 28px;
+    margin: 0%;
+    margin-top: 2%;
+}
+
+.date {
+    font-family: Inter;
+    font-size: 28px;
+    margin: 0%;
+    margin-bottom: 2%;
+}
+
+.hidden{
+    display: none;
+}
+
+.no-video {
+    text-align: center;
+}
+
+.no-video > p {
+    font-size: 28px;
+    margin: 13%;
+}
+
+.video-container{
+    float: left;
+    width:60%;
+    height:60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+iframe {
+    width: 100%;
+    height:100%;
+}
+
+.workout-tab {
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    width: 25%;
+}
+
+.workout-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercise {
+    flex-grow: 1;
+    padding: .5em;
+    background-color: #8DCC3A;
+    border: 1px solid #808080;
+    border-top: 0px;
+    text-align: center;
+}
+
+.exercise > p {
+    font-size: 28px;
+    margin: 0%;
+}
+
+.exercise-highlight {
+    background-color: #A5F739;
+    border-top: 1px solid #808080;
+}
+
+#mark-complete-button{
+    font-size: 28px;
+    margin: 0%;
+    margin-top: 2%;
+    width: 25%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    flex-grow: 1;
+    padding: .5em;
+    border: 1px solid #808080;
+    text-align:center;
+    cursor: pointer;
+}
+
+#mark-complete-button:disabled{
+    color: #4a4a4a;
+    cursor: default;
+}
+
+/* styling for board, profile and search pages */

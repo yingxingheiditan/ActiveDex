@@ -1,7 +1,5 @@
 {% extends "./base.html" %}
 {% block content %}
-<!-- static stylesheet CSS -->
-<link rel="stylesheet" type="text/css" href="./static/css/exercise.css">
 {% load static %}
 <script src="{% static '../static/js/exercise.js' %}" defer></script>
 {{ shows|json_script }}
