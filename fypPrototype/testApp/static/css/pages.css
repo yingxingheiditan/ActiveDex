@@ -284,4 +284,170 @@ iframe {
     cursor: default;
 }
 
+/* styling for board */
+.board-header {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.board-header > p{
+    font-size: 20px;
+}
+
+.board-rank {
+    margin-left: 24%;
+}
+
+.board-user {
+    margin-left: 11.6%;
+}
+
+.board-streak {
+    margin-left: 25.5%;
+}
+
+.card-rank {
+    font-size: 40px;
+    color: gray;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+.card-user-div {
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.card-streak {
+    white-space: nowrap;
+    font-size: 40px;
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+/* styling for search */
+.search-container {
+    margin-bottom: 3%;
+}
+
+.profile-div {
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.search-space-div {
+    margin-left: 45%;
+}
+
+.search-profile-button {
+    margin-top: 30%;
+    height: 35px;
+    width: 115px;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+}
+
+.search-view-profile-button {
+    margin-top: 5%;
+    height: 35px;
+    width: 115px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.btn.search-view-profile-button.blue-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* styling for profile */
+.profile-user-card {
+    background-color: #C6E59C;
+    width: 55%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left:3%;
+    margin-bottom: 13.5%;
+}
+
+.profile-user {
+    font-size: 26px;
+}
+
+.profile-info {
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+
+.profile-setting {
+    position: absolute;
+    right: 27%;
+    top: 22%;
+}
+
+.profile-setting > i {
+    font-size: 40px;
+    color: #111;
+    margin: 0%;
+    padding: 0%;
+}
+
+.profile-button {
+    margin-top: 1%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.red-button {
+    background-color: #D9534F;
+}
+
+a.btn.profile-button.red-button:hover {
+    color: #ffffff;
+}
+
+button.btn.profile-button.blue-button:hover {
+    color: #ffffff;
+}
+
+button.btn.profile-button.green-button:hover {
+    color: #ffffff;
+}
+
 /* styling for board, profile and search pages */
+.user-card {
+    background-color: #C6E59C;
+    width: 55%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left:3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.user-link {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.user-name {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.blue-button {
+    background-color: #24A0ED;
+}
+
+.green-button {
+    background-color: #5CB85C;
+}
